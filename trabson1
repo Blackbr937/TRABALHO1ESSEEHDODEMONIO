@@ -1,0 +1,210 @@
+Exercício 1: 
+
+#include <stdio.h> 
+int main(){ 
+   int A, B, C, D, E, SOMA, PRODUTO, MEDIA; 
+   printf("Digite cinco valores inteiros:"); 
+   scanf("%d %d %d %d %d", &A, &B, &C, &D, &E); 
+ 
+   SOMA = A+B+C+D+E; 
+   printf("O valor da soma eh:%d\n", SOMA); 
+ 
+   PRODUTO = A*B*C*D*E; 
+   printf("O valor do produto eh:%d\n", PRODUTO); 
+ 
+   MEDIA = (A+ B + B + C + E)/5; 
+   printf("O valor da media eh:%d\n", MEDIA); 
+ 
+return 0; 
+} 
+
+Exercício 2: 
+#include <stdio.h> 
+ 
+ 
+int main (){ 
+    double PL, KL, D; 
+    double LN, QG; 
+ 
+    printf("Qual valor por litro do combustivel usado: \n"); 
+    scanf("%lf", &PL); 
+ 
+    printf("Quantos km o automovel faz por litro: \n"); 
+    scanf("%lf", &KL); 
+ 
+    printf("Qual a distancia vai ser percorrida: \n"); 
+    scanf("%lf", &D); 
+ 
+    LN = D/KL; 
+    QG = LN * PL; 
+    printf("Vai ser necessario %.2lf litros para percorrer essa distancia\n",LN); 
+    printf("O valor gasto em combustivel sera: %.2lf\n", QG); 
+ 
+    return 0; 
+ 
+} 
+ 
+Exercício 3: 
+
+#include <stdio.h> 
+ 
+ 
+int main (){ 
+ 
+    int H, C1, C2; 
+    
+ 
+    printf("Digite o valor dos dois catetos:\n", C1, C2); 
+    scanf("%d %d", &C1, &C2); 
+    H = C1*C1+C2*C2; 
+    printf("O valor da hipotenusa eh:%d\n", H); 
+ 
+return 0; 
+} 
+  
+
+Exercício 4: 
+
+#include <stdio.h> 
+ 
+ 
+int main(){ 
+ 
+ 
+    int H, M, TDE; 
+ 
+ 
+    printf("Digite o tempo de duracao do evento em segundos:", TDE); 
+    scanf("%d", &TDE); 
+ 
+ 
+    M = TDE/60; 
+    H = M/60; 
+ 
+ 
+    printf("Duracao em horas minutos e segungos eh %d h: %d m: %d s\n", H, M, TDE); 
+ 
+ 
+return 0; 
+} 
+ 
+ Exercício 5:
+ 
+ #include <stdio.h>
+
+int main(){
+
+    int idadeA, idadeD;
+    int idadeM;
+
+    printf("Digite a idade de uuma pessoa em dias:", idadeD);
+    scanf("%d", &idadeD);
+
+    idadeA = idadeD/365;
+    idadeM = idadeA/30;
+
+    printf("A idade da pessoa em anos mes e dias eh %d: %d: %d\n", idadeA, idadeM, idadeD);
+return 0;
+}
+
+Exercício 6:
+
+#include <stdio.h>
+
+int main(){
+
+    int R;
+    float  Area;
+
+    printf("Digite um valor para o raio:", R);
+    scanf("%d", &R);
+
+    Area = 3.14159*R*R;
+
+    printf("O valor da area do circulo eh: %f", Area);
+
+
+return 0;
+}
+
+Exercício 7:
+
+#include <stdio.h>
+
+int main (){
+
+    char nome[20];
+    int horasT;
+    double valorHora, SALARIO;
+
+    printf("Digite o nome do funcionario:\n", nome);
+    scanf("%s",nome);
+    printf("Digite o numero de horas trabalhadas:\n", horasT);
+    scanf("%d",&horasT);
+    printf("Digite o valor recebido por hora:\n", valorHora);
+    scanf("%lf",&valorHora);
+
+    SALARIO = valorHora * horasT;
+
+    printf("NOME = %s\n", nome);
+    printf("SALARIO = U$ %.2lf\n", SALARIO);
+
+return 0;
+}
+
+Exercício 8:
+
+#include <stdio.h>
+
+int main(){
+
+    int fatorial5;
+
+    fatorial5 = 5*4*3*2*1;
+    printf("O fatorial de 5 eh: %d", fatorial5);
+
+
+return 0;
+}
+
+Exercício 9:
+
+#include <stdio.h>
+
+int main(){
+
+    double volume;
+    int raio;
+
+    printf("Digite o valor do raio:", raio);
+    scanf("%d", &raio);
+
+    volume = 4*3.14159*raio;
+
+    printf("O valor do volume da esfera eh:%.2lf\n", volume);
+
+return 0;
+}
+
+Exercício 10:
+
+#include <stdio.h>
+
+int main(){
+
+    int distanciaT;
+    int combustivelG, consumoM;
+
+    printf("Digite a distancia total:", distanciaT);
+    scanf("%d", &distanciaT);
+    printf("Digite quanto de combustivel foi gasto:", combustivelG);
+    scanf("%d", &combustivelG);
+
+    consumoM = distanciaT / combustivelG;
+
+    printf("O consumo medio de combustivel eh:%d\n", consumoM);
+
+
+
+return 0;
+}
