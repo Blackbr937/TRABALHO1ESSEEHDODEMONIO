@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main (){
+
+    int X;
+
+    scanf("%d", &X);
+
+    X = (X * X);
+    X = (X + 100) / X;
+    X = X + 7;
+
+    printf("Resposta: %d\n", X);
+
+
+
+return 0;
+}
